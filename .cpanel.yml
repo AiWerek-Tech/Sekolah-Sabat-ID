@@ -10,6 +10,7 @@ deployment:
     - /bin/cp LICENSE $DEPLOYPATH && echo "$(date) - Copied LICENSE" >> /home/gmac9439/deploy.log
     - /bin/cp license.md $DEPLOYPATH && echo "$(date) - Copied license.md" >> /home/gmac9439/deploy.log
     - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.md" >> /home/gmac9439/deploy.log
+    - /bin/cp htaccess_forwebsite $DEPLOYPATH && echo "$(date) - Copied htaccess_forwebsite" >> /home/gmac9439/deploy.log
 
     # Salin direktori menggunakan cp
     - /bin/cp -R application $DEPLOYPATH && echo "$(date) - Copied directory application" >> /home/gmac9439/deploy.log

@@ -16,42 +16,6 @@
         background-image: url(<?= base_url('assets') ?>/image/adult-study.webp);
       }
     }
-
-    ul.folders .trigger,
-    ul.folders .ltrigger {
-      background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.svg);
-      background-position: left center;
-      background-repeat: no-repeat;
-      cursor: pointer;
-    }
-
-
-    ul.folders .trigger {
-      display: inline-block;
-      background-size: 20px auto;
-      border-radius: 2em;
-      color: #989690;
-      cursor: pointer;
-      font-family: montserrat, helvetica, arial, sans-serif;
-      font-size: 0.7em;
-      letter-spacing: 2px;
-      margin-left: 1.7em;
-      padding: 0.5em 0.5em 0.5em 1.3rem;
-      text-transform: uppercase;
-    }
-
-    ul.folders .ltrigger {
-      padding-left: 30px;
-    }
-
-    ul.folders li.language>.trigger {
-      margin-left: 0.5em;
-    }
-
-    ul.folders h3.open,
-    ul.folders span.open {
-      background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.svg);
-    }
   </style>
   <header class="header__swath theme--primary-background-color header-swath--with-image blend-mode--multiply">
     <div class="layout-container cf">

@@ -23,11 +23,11 @@
                                 <div>
                                     <h2
                                         class="carousel__item-heading font--tertiary--xl theme--primary-transparent-background-color">
-                                        Sekolah Sabat Anak-anak</h2>
+                                        SS Anak-anak</h2>
                                     <br>
                                     <div
                                         class="carousel__item-dek pad-half--btm theme--primary-transparent-background-color">
-                                        <p><span class="font--primary--xs">Pedoman Pendalaman Alkitab untuk Anak-anak
+                                        <p><span class="font--primary--xs">Sekolah Sabat untuk Anak-anak
                                                 menggunakan kurikulum Gracelink hingga usia 12 tahun (Beginner,
                                                 Kindergarten, Primary & Powerpoint)</p>
                                     </div>
@@ -91,7 +91,7 @@
                                 <div>
                                     <h2
                                         class="carousel__item-heading font--tertiary--xl theme--primary-transparent-background-color">
-                                        Sekolah Sabat Pemuda Dewasa
+                                        Sekolah Sabat Dewasa Muda
                                     </h2>
                                     <br>
                                     <div

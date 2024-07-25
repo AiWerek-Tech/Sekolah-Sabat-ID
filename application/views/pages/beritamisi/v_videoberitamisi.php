@@ -17,73 +17,6 @@
             }
         }
 
-        ul.folders .trigger,
-        ul.folders .ltrigger {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.webp);
-            background-position: left center;
-            background-repeat: no-repeat;
-            cursor: pointer;
-        }
-
-        ul.folders .trigger {
-            display: inline-block;
-            background-size: 20px auto;
-            border-radius: 2em;
-            color: #989690;
-            cursor: pointer;
-            font-family: montserrat, helvetica, arial, sans-serif;
-            font-size: 0.7em;
-            letter-spacing: 2px;
-            margin-left: 1.7em;
-            padding: 0.5em 0.5em 0.5em 1.3rem;
-            text-transform: uppercase;
-        }
-
-        ul.folders .ltrigger {
-            padding-left: 30px;
-        }
-
-        ul.folders li.language>.trigger {
-            margin-left: 0.5em;
-        }
-
-        ul.folders h3.open,
-        ul.folders span.open {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.webp);
-        }
-
-        ul.lessons ul.drawer li a.html {
-            width: 60% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.html {
-                width: 60% !important;
-            }
-        }
-
-        ul.lessons ul.drawer li a.file1 {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
-            width: 15% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.file1 {
-                width: 15% !important;
-            }
-        }
-
-        ul.lessons ul.drawer li a.presentation {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
-            width: 15% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.presentation {
-                width: 15% !important;
-            }
-        }
-
         /* Modal Background */
         .modal {
             display: none;
@@ -234,7 +167,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="<?= base_url('') ?>berita-misi/dewasa"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Bacaan Berita Misi Dewasa
                                     </a>
                                 </h3>
@@ -243,7 +176,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="<?= base_url('') ?>berita-misi/anak-anak"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Bacaan Berita Misi Anak-anak
                                     </a>
                                 </h3>
@@ -252,7 +185,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="<?= base_url('') ?>pages/tentang-sekolah-sabat"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Tentang Sekolah Sabat
                                     </a>
                                 </h3>
