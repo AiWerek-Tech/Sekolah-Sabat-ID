@@ -138,6 +138,34 @@ class Kelas extends CI_Controller
         $this->load->view('template/v_template_home', $data);
     }
 
+    public function pendalamanssdewasa()
+    {
+
+        // Aktifkan pesan kesalahan PHP
+        error_reporting(E_ALL);
+        ini_set('display_errors', 4);
+
+        // Load konfigurasi sebelum memuat view
+        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+
+        // Menyiapkan data untuk dikirimkan ke view
+        $data = [
+            'judul' => 'Pedoman Pendalaman Alkitab Dewasa',
+            'subjudul' => '',
+            'menu' => '',
+            'submenu' => '',
+            'header' => 'template/v_header', // Lokasi view header
+            'navbar' => 'template/v_navbar', // Lokasi view navbar
+            'page' => 'pages/ssdewasa/v_ssdewasa', // Lokasi view content halaman ssa
+            'aside' => 'template/v_aside',
+            'footer' => 'template/v_footer', // Lokasi view footer
+        ];
+
+
+        // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
+        $this->load->view('template/v_template_home', $data);
+    }
+
     public function englishversion()
     {
 
@@ -156,7 +184,7 @@ class Kelas extends CI_Controller
             'submenu' => '',
             'header' => 'template/v_header', // Lokasi view header
             'navbar' => 'template/v_navbar', // Lokasi view navbar
-            'page' => 'pages/v_ssenglish', // Lokasi view content halaman ssa
+            'page' => 'pages/ssdewasa/v_ssenglish', // Lokasi view content halaman ssa
             'aside' => 'template/v_aside',
             'footer' => 'template/v_footer', // Lokasi view footer
         ];

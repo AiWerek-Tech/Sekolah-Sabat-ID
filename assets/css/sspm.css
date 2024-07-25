@@ -840,7 +840,7 @@ ul.lessons ul.drawer li a.file {
   }
 }
 ul.lessons ul.drawer li a.presentation {
-  background-image: url(../image/icon/presentation-8.svg);
+  background-image: url(../image/icon/presentation-download.svg);
   width: 20%;
 }
 @media all and (min-width: 650px) {

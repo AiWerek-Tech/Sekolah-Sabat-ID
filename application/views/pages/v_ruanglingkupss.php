@@ -133,7 +133,7 @@
                 <td data-label="Year">2024</td>
                 <td data-label="1st Quarter">Kitab Mazmur</td>
                 <td data-label="2nd Quarter">Pertentangan Besar</td>
-                <td data-label="3rd Quarter"><a href="https://sabbath-school.adventech.io/in/2024-03" target="_blank"
+                <td data-label="3rd Quarter"><a href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa"
                     class="theme--secondary-text-color">Kitab Markus</a></td>
                 <td data-label="4th Quarter">Tema-Tema dalam Injil Yohanes</td>
               </tr>
