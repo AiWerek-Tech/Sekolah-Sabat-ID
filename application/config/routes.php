@@ -68,7 +68,9 @@ $route['ssaa/powerpoints'] = 'kelas/powerpoints';
 //SS REMAJA
 $route['kelas/ss-remaja'] = 'kelas/ssremaja';
 $route['ss-remaja/realtimefaith'] = 'kelas/realtimefaith';
+$route['ss-remaja/tentang-realtimefaith'] = 'kelas/aboutrealtimefaith';
 $route['ss-remaja/cornerstone'] = 'kelas/cornerstone';
+$route['ss-remaja/tentang-cornerstone-connections'] = 'kelas/aboutcornerstone';
 //SS DEWASA
 $route['kelas/ss-dewasa'] = 'kelas/ssdewasa';
 $route['ss-dewasa/pedoman-pendalaman-alkitab-dewasa'] = 'kelas/pendalamanssdewasa';
@@ -77,5 +79,8 @@ $route['ss-pemuda/inverse'] = 'kelas/inverse';
 
 //BERITA MISSION
 $route['pages/berita-misi'] = 'pages/beritamisi';
+$route['berita-misi/dewasa'] = 'pages/beritamisidewasa';
+$route['berita-misi/anak-anak'] = 'pages/beritamisianak';
 $route['berita-misi/video'] = 'pages/videoberitamisi';
+$route['berita-misi/dewasa/d2431'] = 'beritamisi/cerita1';
 

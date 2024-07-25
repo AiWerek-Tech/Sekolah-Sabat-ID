@@ -2,18 +2,18 @@
   <style type="text/css">
     .header-swath--with-image {
       background-size: 100% auto;
-      background-image: url(<?= base_url('assets') ?>/image/ss-dewasa.webp);
+      background-image: url(<?= $og_image ?>);
     }
 
     @media (min-width: 900px) {
       .header-swath--with-image {
-        background-image: url(<?= base_url('assets') ?>/image/ss-dewasa.webp);
+        background-image: url(<?= $og_image ?>);
       }
     }
 
     @media (min-width: 1100px) {
       .header-swath--with-image {
-        background-image: url(<?= base_url('assets') ?>/image/ss-dewasa.webp);
+        background-image: url(<?= $og_image ?>);
       }
     }
 
@@ -100,6 +100,15 @@
       width: 40%;
       float: right;
       margin: 2em 0 1em 1.5em;
+    }
+
+    a {
+      color: initial;
+      /* Ganti dengan warna default jika perlu */
+    }
+
+    a[href=""] span {
+      color: #A7A5A0 !important;
     }
   </style>
   <header class="header__swath theme--primary-background-color header-swath--with-image blend-mode--multiply">

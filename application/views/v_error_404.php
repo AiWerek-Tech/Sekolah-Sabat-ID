@@ -19,7 +19,7 @@
     <div>
         <p>
             <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                href="<?php echo base_url(); ?>">Kembali ke Beranda</a>
+                href="javascript:history.back()">Kembali</a>
         </p>
     </div>
 

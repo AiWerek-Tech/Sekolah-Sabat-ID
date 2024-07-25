@@ -2,18 +2,18 @@
   <style type="text/css">
     .header-swath--with-image {
       background-size: 100% auto;
-      background-image: url(<?= base_url('assets') ?>/image/gambar_slide_5.webp);
+      background-image: url(<?= $og_image ?>);
     }
 
     @media (min-width: 900px) {
       .header-swath--with-image {
-        background-image: url(<?= base_url('assets') ?>/image/gambar_slide_5.webp);
+        background-image: url(<?= $og_image ?>);
       }
     }
 
     @media (min-width: 1100px) {
       .header-swath--with-image {
-        background-image: url(<?= base_url('assets') ?>/image/gambar_slide_5.webp);
+        background-image: url(<?= $og_image ?>);
       }
     }
 
@@ -86,13 +86,22 @@
       border-radius: 0 0 8px 8px;
       text-align: right;
     }
+
+    a {
+      color: initial;
+      /* Ganti dengan warna default jika perlu */
+    }
+
+    a[href=""] span {
+      color: #A7A5A0 !important;
+    }
   </style>
   <header class="header__swath theme--primary-background-color header-swath--with-image blend-mode--multiply">
     <div class="layout-container cf">
       <div class="flex-container cf">
         <div class="shift-left--fluid">
           <span class="kicker white"></span>
-          <h1 class="font--tertiary--xl white">Beginner (usia lahir-2)</h1>
+          <h1 class="font--tertiary--xl white"><?= $judul ?> (usia lahir-2)</h1>
         </div>
         <div class="shift-right--fluid"></div>
       </div>
@@ -120,24 +129,24 @@
                 <h2>Bahasa Indonesia</h2>
                 <ul class="lessons">
                   <li>
-                    <h3 class="ltrigger ">Siswa</h3>
-                    <ul class="drawer lessons ">
+                    <h3 class="ltrigger open">Siswa</h3>
+                    <ul class="drawer lessons open">
                       <li>
                         <a class="html" href="" target="_blank"><span>Activity</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"><span>-</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"><span>-</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 01 - Juli</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"
+                        <a class="presentation1"
                           href="https://drive.google.com/uc?export=download&id=1bt41VFGwGydTfyCPMHzZFvYZvq8yZERB"
                           target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
@@ -145,19 +154,19 @@
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 02 - Agustus</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 03 - September</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Ayat Hafalan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"><span>-</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                     </ul>
@@ -170,13 +179,13 @@
                       <li>
                         <a class="html" href="" target="_blank"><span>Activity</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"><span>-</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"><span>-</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
@@ -184,7 +193,7 @@
                           target="_blank"><span>Pelajaran 01 - Juli</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1O1kIn_hWABad7eCsBzJiA1Ii8P8LSZou/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation"
+                        <a class="presentation1"
                           href="https://drive.google.com/uc?export=download&id=1bt41VFGwGydTfyCPMHzZFvYZvq8yZERB"
                           target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
@@ -194,7 +203,7 @@
                           target="_blank"><span>Pelajaran 02 - Agustus</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1MVdTwhW9guIYjxFX8xmaSDZbomAzRTou/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
@@ -202,13 +211,13 @@
                           target="_blank"><span>Pelajaran 03 - September</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1czcRHHBxAfFpKFyJXxXODzLzk8_ZfbLs/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Ayat Hafalan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation"><span>-</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                     </ul>
@@ -343,8 +352,7 @@
               </li>
               <li class="folder">
                 <h3 class="font--secondary--m sized theme--secondary-text-color">
-                  <a href="https://www-gracelink-net.translate.goog/about-us?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=wapp"
-                    target="_blank">
+                  <a href="<?= base_url('') ?>pages/tentang-kurikulum-gracelink">
                     Tentang Kurikulum Gracelink
                   </a>
                 </h3>
@@ -377,8 +385,8 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Mendapatkan semua tautan dengan kelas 'html', 'file1', dan 'presentation'
-      var linkClasses = ['html', 'file', 'file1', 'presentation'];
+      // Mendapatkan semua tautan dengan kelas 'html', 'file1', dan 'presentation1'
+      var linkClasses = ['html', 'file', 'file1', 'presentation1'];
       var links = document.querySelectorAll(linkClasses.map(cls => `a.${cls}`).join(', '));
 
       links.forEach(function (link) {

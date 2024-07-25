@@ -61,7 +61,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Tentang Sekolah Sabat',
             'og_description' => 'Sekolah Sabat adalah salah satu bagian terpenting dari hari Sabat. Ini memberi kita kesempatan untuk bersekutu, memahami misi, melakukan pelayanan masyarakat, dan yang paling utama, belajar dan berdiskusi tentang Alkitab...',
-            'og_image' => base_url('assets/image/ss-dewasa.webp'),
+            'og_image' => base_url('assets/image/home_image.webp'),
             'og_url' => base_url('pages/pages/tentang-sekolah-sabat')
         ];
 
@@ -127,7 +127,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Kurikulum Gracelink',
             'og_description' => 'GraceLink adalah kurikulum 12 tahun yang terdiri dari 624 pelajaran, semuanya berlandaskan pada Kitab Suci...',
-            'og_image' => base_url('assets/image/gambar_slide_5.webp'),
+            'og_image' => base_url('assets/image/children-ministry-2.webp'),
             'og_url' => base_url('pages/tentang-kurikulum-gracelink')
         ];
 
@@ -158,7 +158,7 @@ class Pages extends CI_Controller
             'navbar' => 'template/v_navbar', // Lokasi view navbar
             'page' => 'pages/beritamisi/v_beritamisi', // Lokasi view content halaman ssa
             'aside' => 'template/v_aside',
-            'footer' => 'template/v_footer', // Lokasi view footer
+            'footer' => 'template/v_footer', // Lokasi view footer       
 
             'og_title' => 'Berita Misi Advent',
             'og_description' => 'Kisah Misi Advent Sedunia',
@@ -167,6 +167,80 @@ class Pages extends CI_Controller
         ];
 
 
+        // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
+        $this->load->view('template/v_template_home', $data);
+    }
+
+    public function beritamisidewasa()
+    {
+        // Aktifkan pesan kesalahan PHP
+        error_reporting(E_ALL);
+        ini_set('display_errors', 4);
+
+        // Load konfigurasi sebelum memuat view
+        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+
+        // Menyiapkan data untuk dikirimkan ke view
+        $data = [
+            'judul' => 'Berita Misi Dewasa',
+            'subjudul' => '',
+            'menu' => '',
+            'submenu' => '',
+            'header' => 'template/v_header', // Lokasi view header
+            'navbar' => 'template/v_navbar', // Lokasi view navbar
+            'page' => 'pages/beritamisi/v_beritamisidewasa', // Lokasi view content halaman ssa
+            'aside' => 'template/v_aside',
+            'footer' => 'template/v_footer', // Lokasi view footer
+
+            'titlestory1' => 'Sabat Penyimpangan',
+            'titlestory2' => 'TUHAN Mengerjakan Bagian-Nya',
+            'titlestory3' => 'Perjuangan Atas Iman',
+            'titlestory4' => 'Jerry Si Kapsul Waktu',
+            'titlestory5' => 'Sabat Penyimpangan',
+            'titlestory6' => 'Sabat Penyimpangan',
+            'titlestory7' => 'Sabat Penyimpangan',
+            'titlestory8' => 'Sabat Penyimpangan',
+            'titlestory9' => 'Sabat Penyimpangan',
+            'titlestory10' => 'Sabat Penyimpangan',
+            'titlestory11' => 'Sabat Penyimpangan',
+            'titlestory12' => 'Sabat Penyimpangan',
+            'titlestory13' => 'Sabat Penyimpangan',
+
+            'og_title' => 'Berita Misi Dewasa',
+            'og_description' => 'Kisah Misi Advent Sedunia untuk Dewasa',
+            'og_image' => base_url('assets/image/berita_misi/bmd.webp'),
+            'og_url' => base_url('pages/berita-misi')
+        ];
+        // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
+        $this->load->view('template/v_template_home', $data);
+    }
+
+    public function beritamisianak()
+    {
+        // Aktifkan pesan kesalahan PHP
+        error_reporting(E_ALL);
+        ini_set('display_errors', 4);
+
+        // Load konfigurasi sebelum memuat view
+        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+
+        // Menyiapkan data untuk dikirimkan ke view
+        $data = [
+            'judul' => 'Berita Misi Anak-anak',
+            'subjudul' => '',
+            'menu' => '',
+            'submenu' => '',
+            'header' => 'template/v_header', // Lokasi view header
+            'navbar' => 'template/v_navbar', // Lokasi view navbar
+            'page' => 'pages/beritamisi/v_beritamisianak', // Lokasi view content halaman ssa
+            'aside' => 'template/v_aside',
+            'footer' => 'template/v_footer', // Lokasi view footer
+
+            'og_title' => 'Berita Misi Anak-anak',
+            'og_description' => 'Kisah Misi Advent Sedunia untuk Anak-anak',
+            'og_image' => base_url('assets/image/berita_misi/bma.webp'),
+            'og_url' => base_url('pages/berita-misi')
+        ];
         // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
         $this->load->view('template/v_template_home', $data);
     }
@@ -195,7 +269,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Video Berita Misi Advent',
             'og_description' => 'Video Kisah Misi Advent Sedunia',
-            'og_image' => base_url('assets/image/berita-misi/video-bm.webp'),
+            'og_image' => base_url('assets/image/berita_misi/video-bm.webp'),
             'og_url' => base_url('berita-misi/video')
         ];
 
