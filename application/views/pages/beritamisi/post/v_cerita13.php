@@ -225,7 +225,8 @@
 						<h1 class="content"><?= $judul ?></h1>
 					</div>
 					<div class="container1">
-						<?php $this->load->view('pages/beritamisi/post_isi/v_post_isi1'); ?>
+						<p>DALAM PROSES PENGERJAAN</p>
+						<!-- <?php $this->load->view('pages/beritamisi/post_isi/v_post_anak13'); ?> -->
 					</div>
 
 

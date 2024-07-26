@@ -132,8 +132,10 @@
                     <h3 class="ltrigger open">Siswa</h3>
                     <ul class="drawer lessons open">
                       <li>
-                        <a class="html" href="" target="_blank"><span>Activity</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <a class="html" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
+                          target="_blank"><span>Activity</span></a>
+                        <a class="file1" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
+                          target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
@@ -177,8 +179,10 @@
                     <h3 class="ltrigger ">Penuntun Guru</h3>
                     <ul class="drawer lessons ">
                       <li>
-                        <a class="html" href="" target="_blank"><span>Activity</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <a class="html" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
+                          target="_blank"><span>Activity</span></a>
+                        <a class="file1" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
+                          target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>

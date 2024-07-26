@@ -131,6 +131,16 @@
                     <h3 class="ltrigger open">Siswa</h3>
                     <ul class="drawer lessons open">
                       <li>
+                        <a class="html"
+                          href="https://drive.google.com/file/d/1nkFpIobDVS78775NubbIYDDrxU6lmQHz/view?usp=drive_link"
+                          target="_blank"><span>Actifity</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1nkFpIobDVS78775NubbIYDDrxU6lmQHz/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <section class="audio"></section>
+                      </li>
+                      <li>
                         <a class="html" href="" target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
@@ -139,25 +149,33 @@
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 01</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1VyrWS-TfDv3ZzKZxvXOvwhQUZoqHVRbH/edit?usp=drive_link&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 02</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1FQ_hUR8Ykgc5VOCKEInca5ufuVLypKh7/edit?usp=drive_link&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 03</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/15q_qvezoM6JxqlTOnU-0i8gdndrjLjJq/edit?usp=drive_link&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="" target="_blank"><span>Pelajaran 04</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1DchvmQzS6lFyo32vDCi0Xcx942iIO-8p/edit?usp=drive_link&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>

@@ -110,17 +110,6 @@
     a[href=""] span {
       color: #A7A5A0 !important;
     }
-
-    .html span {
-      margin-top: -5px !important;
-      /* font-size: 15px !important; */
-    }
-
-    .judul-cerita {
-      font-size: 12px;
-      margin-top: -5px !important;
-      color: #A7A5A0;
-    }
   </style>
   <header class="header__swath theme--primary-background-color header-swath--with-image blend-mode--multiply">
     <div class="layout-container cf">
@@ -149,7 +138,7 @@
           <!-- <p>Pedoman Pendalaman Alkitab Dewasa atau sering disebut sekolah sabat dewasa ditujukan untuk usia Dewasa.</p> -->
           <h1 class="font--secondary--xl theme--secondary-text-color">DIVISI ANTAR-AMERIKA</h1>
           <h3 class="font--secondary--xl theme--secondary-text-color">Triwulan III, 2024</h3>
-          <img src="<?= base_url('assets') ?>/image/berita_misi/bmd-cover.webp" class="img-right">
+          <img src="<?= base_url('assets') ?>/image/berita_misi/bma-cover.webp" class="img-right">
           <p>
             Yesus tidak diragukan lagi adalah guru terhebat yang pernah dikenal dunia. Perkataannya telah mengilhami
             jutaan orang dari segala usia, latar belakang, dan waktu. Mari kita lihat pesan apa yang Dia miliki untuk
@@ -165,131 +154,105 @@
             <!-- BHS INDOENSIA -->
             <ul class="folders lessons Indonesia">
               <li class="folder language">
-                <h2>Bacaan Berita Misi</h2>
+                <h2>Bahasa Indonesia</h2>
                 <ul class="lessons">
                   <li>
-                    <h3 class="ltrigger open">Bahasa Indonesia</h3>
+                    <h3 class="ltrigger open">Pelajaran (Devotional Edition)</h3>
                     <ul class="drawer lessons open">
                       <li>
-                        <a class="html" href="" target="_blank"><span>Pendahuluan</span><br>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03"
+                          target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2431"><span>Sabat
-                            ke 01</span>
-                          <p class="judul-cerita"><em><?= $titlestory1 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/01/01"
+                          target="_blank"><span>Pelajaran 01</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2432"><span>Sabat
-                            ke 02</span>
-                          <p class="judul-cerita"><em><?= $titlestory2 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/02/01"
+                          target="_blank"><span>Pelajaran 02</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2433"><span>Sabat
-                            ke 03</span>
-                          <p class="judul-cerita"><em><?= $titlestory3 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/03/01"
+                          target="_blank"><span>Pelajaran 03</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2434"><span>Sabat
-                            ke 04</span>
-                          <p class="judul-cerita"><em><?= $titlestory4 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-04/02/01"
+                          target="_blank"><span>Pelajaran 04</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2435"><span>Sabat
-                            ke 05</span>
-                          <p class="judul-cerita"><em><?= $titlestory5 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/05/01"
+                          target="_blank"><span>Pelajaran 05</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2436"><span>Sabat
-                            ke 06</span>
-                          <p class="judul-cerita"><em><?= $titlestory6 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/06/01"
+                          target="_blank"><span>Pelajaran 06</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2437"><span>Sabat
-                            ke 07</span>
-                          <p class="judul-cerita"><em><?= $titlestory7 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/07/01"
+                          target="_blank"><span>Pelajaran 07</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2438"><span>Sabat
-                            ke 08</span>
-                          <p class="judul-cerita"><em><?= $titlestory8 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/08/01"
+                          target="_blank"><span>Pelajaran 08</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2439"><span>Sabat
-                            ke 09</span>
-                          <p class="judul-cerita"><em><?= $titlestory9 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/09/01"
+                          target="_blank"><span>Pelajaran 09</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24310"><span>Sabat
-                            ke 10</span>
-                          <p class="judul-cerita"><em><?= $titlestory10 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/10/01"
+                          target="_blank"><span>Pelajaran 10</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24311"><span>Sabat
-                            ke 11</span>
-                          <p class="judul-cerita"><em><?= $titlestory11 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/11/01"
+                          target="_blank"><span>Pelajaran 11</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24312"><span>Sabat
-                            ke 12</span>
-                          <p class="judul-cerita"><em><?= $titlestory12 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/12/01"
+                          target="_blank"><span>Pelajaran 12</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24313"><span>Sabat
-                            ke 13</span>
-                          <p class="judul-cerita"><em><?= $titlestory13 ?></em></p>
-                        </a>
+                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/13/01"
+                          target="_blank"><span>Pelajaran 13</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
@@ -297,10 +260,16 @@
                     </ul>
                   </li>
                 </ul>
+              </li>
+            </ul>
 
+            <!-- BHS INGGRIS -->
+            <ul class="folders lessons English">
+              <li class="folder language">
+                <h2>English</h2>
                 <ul class="lessons">
                   <li>
-                    <h3 class="ltrigger">English Mission Story</h3>
+                    <h3 class="ltrigger">Devotional</h3>
                     <ul class="drawer lessons">
                       <li>
                         <a class="html"
@@ -422,9 +391,132 @@
                     </ul>
                   </li>
                 </ul>
+                <ul class="lessons">
+                  <li>
+                    <h3 class="ltrigger ">Journal</h3>
+                    <ul class="drawer lessons ">
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L01.pdf"
+                          target="_blank"><span>Lesson 01 - July 6</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L01.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L02.pdf"
+                          target="_blank"><span>Lesson 02 - July 13</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L02.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L03.pdf"
+                          target="_blank"><span>Lesson 03 - July 20</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L03.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L04.pdf"
+                          target="_blank"><span>Lesson 04 - July 27</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L04.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L05.pdf"
+                          target="_blank"><span>Lesson 05 - August 3</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L05.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L06.pdf"
+                          target="_blank"><span>Lesson 06 - August 10</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L06.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L07.pdf"
+                          target="_blank"><span>Lesson 07 - August 17</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L07.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L08.pdf"
+                          target="_blank"><span>Lesson 08 - August 24</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L08.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L09.pdf"
+                          target="_blank"><span>Lesson 09 - August 31</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L09.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L10.pdf"
+                          target="_blank"><span>Lesson 10 - September 7</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L10.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L11.pdf"
+                          target="_blank"><span>Lesson 11 - September 14</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L11.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L12.pdf"
+                          target="_blank"><span>Lesson 12 - September 21</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L12.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L13.pdf"
+                          target="_blank"><span>Lesson 13 - September 28</span></a><a class="file" target="_blank"
+                          class="file"
+                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-J-2024-Q3-L13.pdf"><span>Download</span></a>
+                        <section class="audio">
+                        </section>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
             </ul>
-
 
           </div>
         </div>

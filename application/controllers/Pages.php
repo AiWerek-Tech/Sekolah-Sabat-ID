@@ -193,24 +193,54 @@ class Pages extends CI_Controller
             'footer' => 'template/v_footer', // Lokasi view footer
 
             'titlestory1' => 'Sabat Penyimpangan',
+            'datetory1' => '6 Juli 2024',
+            'storyby1' => 'Ursula Leslie',
             'titlestory2' => 'TUHAN Mengerjakan Bagian-Nya',
+            'datetory2' => '13 Juli 2024',
+            'storyby2' => 'Roderick',
             'titlestory3' => 'Perjuangan Atas Iman',
+            'datetory3' => '20 Juli 2024',
+            'storyby3' => 'Zarrah',
             'titlestory4' => 'Jerry Si Kapsul Waktu',
-            'titlestory5' => 'Sabat Penyimpangan',
-            'titlestory6' => 'Sabat Penyimpangan',
-            'titlestory7' => 'Sabat Penyimpangan',
-            'titlestory8' => 'Sabat Penyimpangan',
-            'titlestory9' => 'Sabat Penyimpangan',
-            'titlestory10' => 'Sabat Penyimpangan',
-            'titlestory11' => 'Sabat Penyimpangan',
-            'titlestory12' => 'Sabat Penyimpangan',
-            'titlestory13' => 'Sabat Penyimpangan',
+            'datetory4' => '27 Juli 2024',
+            'storyby4' => 'Antonia',
+            'titlestory5' => 'Perampokan Mobil',
+            'datetory5' => '3 Agustus 2024',
+            'storyby5' => 'Beverly',
+            'titlestory6' => '"Aku Membutuhkanmu"',
+            'datetory6' => '10 Agustus 2024',
+            'storyby6' => 'Faith',
+            'titlestory7' => '"Kembalilah Kepada Tuhan"',
+            'datetory7' => '17 Agustus 2024',
+            'storyby7' => 'Wilinton',
+            'titlestory8' => 'Mengikuti Jejak Paulus',
+            'datetory8' => '24 Agustus 2024',
+            'storyby8' => 'Wilinton',
+            'titlestory9' => 'Bar yang Dibeli Dengan Doa',
+            'datetory9' => '31 Agustus 2024',
+            'storyby9' => 'Adriana',
+            'titlestory10' => 'Lebih dari Sekadar "Halo"',
+            'datetory10' => '7 September 2024',
+            'storyby10' => 'Harlin',
+            'titlestory11' => 'Harta Karun yang Sesungguhnya',
+            'datetory11' => '14 September 2024',
+            'storyby11' => 'Jahiquel',
+            'titlestory12' => 'Berdoa untuk Tiga Orang',
+            'datetory12' => '21 September 2024',
+            'storyby12' => 'Stephanie',
+            'titlestory13' => 'Seorang Pengunjung dan Sebuah Mimpi',
+            'datetory13' => '28 September 2024',
+            'storyby13' => 'Erickson',
 
             'og_title' => 'Berita Misi Dewasa',
             'og_description' => 'Kisah Misi Advent Sedunia untuk Dewasa',
             'og_image' => base_url('assets/image/berita_misi/bmd.webp'),
             'og_url' => base_url('pages/berita-misi')
         ];
+
+        // Simpan data ke dalam sesi
+        $this->session->set_userdata('data_beritamisi', $data);
+
         // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
         $this->load->view('template/v_template_home', $data);
     }
@@ -236,11 +266,55 @@ class Pages extends CI_Controller
             'aside' => 'template/v_aside',
             'footer' => 'template/v_footer', // Lokasi view footer
 
+
+            'titlestory1' => 'Mencari Lebih Banyak',
+            'datetory1' => '6 Juli 2024',
+            'storyby1' => 'Deymily',
+            'titlestory2' => 'Monyet di Dalam Rumah',
+            'datetory2' => '13 Juli 2024',
+            'storyby2' => 'Karyeri',
+            'titlestory3' => 'Gigitan Ular!',
+            'datetory3' => '20 Juli 2024',
+            'storyby3' => 'Hickel',
+            'titlestory4' => 'Penantian untuk Seorang Ibu',
+            'datetory4' => '27 Juli 2024',
+            'storyby4' => 'Michelle',
+            'titlestory5' => 'Datang ke Kaki Yesus',
+            'datetory5' => '3 Agustus 2024',
+            'storyby5' => 'Samuel',
+            'titlestory6' => '"Tidak" untuk Pergi ke Gereja',
+            'datetory6' => '10 Agustus 2024',
+            'storyby6' => 'Aaron',
+            'titlestory7' => 'Keajaiban Musik',
+            'datetory7' => '17 Agustus 2024',
+            'storyby7' => 'Moises',
+            'titlestory8' => 'Petualangan Destiny',
+            'datetory8' => '24 Agustus 2024',
+            'storyby8' => 'Destiny',
+            'titlestory9' => 'Bukan Monster',
+            'datetory9' => '31 Agustus 2024',
+            'storyby9' => 'Khyshawn',
+            'titlestory10' => 'Memainkan Permainan Kesukaan',
+            'datetory10' => '7 September 2024',
+            'storyby10' => 'Nikita',
+            'titlestory11' => 'Dulu Mengamuk, Sekarang Menjadi Tenang',
+            'datetory11' => '14 September 2024',
+            'storyby11' => 'Kitona',
+            'titlestory12' => 'Berdoa untuk Pergi ke Sekolah',
+            'datetory12' => '21 September 2024',
+            'storyby12' => 'Keya',
+            'titlestory13' => 'Sabat ke Tiga Belas: Kertas Permohonan Doa',
+            'datetory13' => '28 September 2024',
+            'storyby13' => 'Jerry',
+
             'og_title' => 'Berita Misi Anak-anak',
             'og_description' => 'Kisah Misi Advent Sedunia untuk Anak-anak',
             'og_image' => base_url('assets/image/berita_misi/bma.webp'),
             'og_url' => base_url('pages/berita-misi')
         ];
+        // Simpan data ke dalam sesi
+        $this->session->set_userdata('data_beritamisi_anak', $data);
+
         // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
         $this->load->view('template/v_template_home', $data);
     }
