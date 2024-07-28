@@ -144,9 +144,9 @@ class Beritamisi extends CI_Controller
             'footer' => 'template/beritamisi/v_footer_beritamisi', // Lokasi view footer
 
             'og_title' => $data_beritamisi['titlestory4'],
-            'og_description' => 'Berita Misi Dewasa untuk Sabat, ' . $data_beritamisi['datetory4'],
+            'og_description' => 'Berita Misi Dewasa untuk Sabat ke 4, 26 Juli 2024',
             'og_image' => base_url('assets/image/berita_misi/post_q1/story4.webp'),
-            'og_url' => base_url('pages/tentang-kami')
+            'og_url' => base_url('berita-misi/dewasa/d2434')
         ];
         // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
         $this->load->view('template/beritamisi/v_template_beritamisi', $data);
@@ -181,7 +181,7 @@ class Beritamisi extends CI_Controller
             'footer' => 'template/beritamisi/v_footer_beritamisi', // Lokasi view footer
 
             'og_title' => $data_beritamisi['titlestory5'],
-            'og_description' => 'Berita Misi Dewasa untuk Sabat, ' . $data_beritamisi['datetory5'],
+            'og_description' => 'Berita Misi Dewasa untuk Sabat ke 5, 3 Agustus 2024',
             'og_image' => "https://am.adventistmission.org/assets/public/resources/youth-and-adult-magazine/files/issues/2024/3Q/5-TrinidadTobago-head.jpg",
             // 'og_image' => base_url('assets/image/berita_misi/post_q1/story5.webp'),
             'og_url' => base_url('pages/tentang-kami')

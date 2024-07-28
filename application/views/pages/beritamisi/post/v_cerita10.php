@@ -209,9 +209,9 @@
 					<nav class="breadcrumbs" role="navigation">
 						<ul class="breadcrumbs__list">
 							<li class="breadcrumbs__list-item font--secondary--xs upper dib"><a
-									href="<?= base_url('') ?>kelas/ss-dewasa">Berita Misi</a></li>
+									href="<?= base_url('') ?>pages/berita-misi">Berita Misi</a></li>
 							<li class="breadcrumbs__list-item font--secondary--xs upper dib"><a
-									href="<?= base_url('') ?>kelas/ss-dewasa">Dewasa</a></li>
+									href="<?= base_url('') ?>berita-misi/dewasa">Dewasa</a></li>
 							<li class="breadcrumbs__list-item font--secondary--xs upper dib"><a
 									class="current"><?= $judul ?></a></li>
 						</ul>
@@ -225,8 +225,8 @@
 						<h1 class="content"><?= $judul ?></h1>
 					</div>
 					<div class="container1">
-						<p>DALAM PROSES PENGERJAAN</p>
-						<!-- <?php $this->load->view('pages/beritamisi/post_isi/v_post_anak10'); ?> -->
+						<!-- <p>DALAM PROSES PENGERJAAN</p> -->
+						<?php $this->load->view('pages/beritamisi/post_isi/v_post_isi10'); ?>
 					</div>
 
 

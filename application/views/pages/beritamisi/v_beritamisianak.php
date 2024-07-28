@@ -151,15 +151,18 @@
           <h3 class="font--secondary--xl theme--secondary-text-color">Triwulan III, 2024</h3>
           <img src="<?= base_url('assets') ?>/image/berita_misi/bma-cover.webp" class="img-right">
           <p>
-            Yesus tidak diragukan lagi adalah guru terhebat yang pernah dikenal dunia. Perkataannya telah mengilhami
-            jutaan orang dari segala usia, latar belakang, dan waktu. Mari kita lihat pesan apa yang Dia miliki untuk
-            pembaca modern!
+            Pada triwulan ini kami menampilkan Divisi Antar-Amerika, yang menaungi pekerjaan Gereja Masehi Advent Hari
+            Ketujuh di 42 negara dan wilayah di Laut Karibia, Amerika Tengah, dan bagian utara Amerika Selatan. Wilayah
+            ini merupakan rumah bagi 305 juta orangdan 3,7 juta umat Advent. Hal ini berarti satu orang Advent
+            berbanding 82 orang.
           </p>
           <p><em>
-              inVerse diterbitkan oleh Departemen Sekolah Sabat dan Pelayanan Perorangan General Conference Gereja
-              Masehi Advent Hari Ketujuh untuk pelajar, dewasa muda, pekerja profesional, dan orang tua muda dan mereka
-              berjiwa muda.</em>
+              Perlu diketahui bahwa Anda tidak perlu membaca cerita persis seperti yang dipublikasikan. silakan
+              menyesuaikan bahasa dan isinya dengan tingkat yang sesuai dengan kelompok usia di kelas Sekolah Sabat
+              Anda.</em>
           </p>
+          <button> <a class="file1" href="https://am.adventistmission.org/mqc24q3-bahasa-version"
+              target="_blank">Download Pdf</a></button>
           <div class="lessonlist">
 
             <!-- BHS INDOENSIA -->
@@ -303,119 +306,93 @@
                     <h3 class="ltrigger">English Mission Story</h3>
                     <ul class="drawer lessons">
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L01.pdf"
-                          target="_blank"><span>Lesson 01 - July 6</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L01.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2431" target="_blank"><span>Story 01 -
+                            July 6</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L02.pdf"
-                          target="_blank"><span>Lesson 02 - July 13</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L02.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2432" target="_blank"><span>Story 02 -
+                            July 13</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L03.pdf"
-                          target="_blank"><span>Lesson 03 - July 20</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L03.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2433" target="_blank"><span>Story 03 -
+                            July 20</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L04.pdf"
-                          target="_blank"><span>Lesson 04 - July 27</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L04.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2434" target="_blank"><span>Story 04 -
+                            July 27</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L05.pdf"
-                          target="_blank"><span>Lesson 05 - August 3</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L05.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2435" target="_blank"><span>Story 05 -
+                            August 3</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L06.pdf"
-                          target="_blank"><span>Lesson 06 - August 10</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L06.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2436" target="_blank"><span>Story 06 -
+                            August 10</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L07.pdf"
-                          target="_blank"><span>Lesson 07 - August 17</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L07.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2437" target="_blank"><span>Story 07 -
+                            August 17</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L08.pdf"
-                          target="_blank"><span>Lesson 08 - August 24</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L08.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2438" target="_blank"><span>Story 08 -
+                            August 24</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L09.pdf"
-                          target="_blank"><span>Lesson 09 - August 31</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L09.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c2439" target="_blank"><span>Story 09 -
+                            August 31</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L10.pdf"
-                          target="_blank"><span>Lesson 10 - September 7</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L10.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c24310" target="_blank"><span>Story 10 -
+                            September 7</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L11.pdf"
-                          target="_blank"><span>Lesson 11 - September 14</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L11.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c24311" target="_blank"><span>Story 11 -
+                            September 14</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L12.pdf"
-                          target="_blank"><span>Lesson 12 - September 21</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L12.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c24312" target="_blank"><span>Story 12 -
+                            September 21</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L13.pdf"
-                          target="_blank"><span>Lesson 13 - September 28</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L13.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/c24313" target="_blank"><span>Story 13 -
+                            September 28</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqc24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
@@ -435,15 +412,15 @@
             <ul class="folders folders-gracelink">
               <li class="folder">
                 <h3 class="font--secondary--m sized theme--secondary-text-color">
-                  <a href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa">
-                    Sekolah Sabat Dewasa
+                  <a href="<?= base_url('') ?>berita-misi/dewasa">
+                    Berita Misi Dewasa
                   </a>
                 </h3>
               </li>
               <li class="folder">
                 <h3 class="font--secondary--m sized theme--secondary-text-color">
-                  <a href="<?= base_url('') ?>pages/ruang-lingkup-pelajaran-ss">
-                    Ruang Lingkup dan Urutan Pelajaran
+                  <a href="<?= base_url('') ?>berita-misi/video">
+                    Video Berita Misi
                   </a>
                 </h3>
               </li>

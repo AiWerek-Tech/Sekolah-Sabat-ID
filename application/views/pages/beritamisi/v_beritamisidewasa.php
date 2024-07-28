@@ -121,6 +121,55 @@
       margin-top: -5px !important;
       color: #A7A5A0;
     }
+
+
+    /* tampilan mobile */
+    ul.lessons ul.drawer li a.html1 {
+      width: 60% !important;
+    }
+
+    /* tampilan mobile */
+    ul.lessons ul.drawer li a.presentation1 {
+      background-image: url(<?= base_url('assets') ?>/image/icon/presentation-download.svg);
+      width: auto !important;
+      /* /* background-repeat: no-repeat;
+      background-position: center 0.5em; */
+      /* padding: 0.5em 0.5em; */
+    }
+
+    /* tampilan desktop */
+    @media all and (min-width: 650px) {
+      ul.lessons ul.drawer li a.html1 {
+        width: 80% !important;
+      }
+
+      ul.lessons ul.drawer li a.presentation1 {
+        width: 20%;
+      }
+    }
+
+    ul.lessons ul.drawer li a.presentation1:hover {
+      background-image: url(<?= base_url('assets') ?>/image/icon/file-download.svg);
+      background-position: center 0.6em;
+    }
+
+    @media all and (min-width: 650px) {
+      ul.lessons ul.drawer li a.presentation1:hover {
+        background-position: 5px 0.6em;
+      }
+    }
+
+    ul.lessons ul.drawer li a.presentation1 span {
+      display: none;
+      font-size: 0.8em;
+    }
+
+    @media all and (min-width: 650px) {
+      ul.lessons ul.drawer li a.presentation1 span {
+        display: inline;
+        margin-left: 5px;
+      }
+    }
   </style>
   <header class="header__swath theme--primary-background-color header-swath--with-image blend-mode--multiply">
     <div class="layout-container cf">
@@ -151,15 +200,17 @@
           <h3 class="font--secondary--xl theme--secondary-text-color">Triwulan III, 2024</h3>
           <img src="<?= base_url('assets') ?>/image/berita_misi/bmd-cover.webp" class="img-right">
           <p>
-            Yesus tidak diragukan lagi adalah guru terhebat yang pernah dikenal dunia. Perkataannya telah mengilhami
-            jutaan orang dari segala usia, latar belakang, dan waktu. Mari kita lihat pesan apa yang Dia miliki untuk
-            pembaca modern!
+            Pada triwulan ini kami menampilkan Divisi Antar-Amerika, yang menaungi pekerjaan Gereja Masehi Advent Hari
+            Ketujuh di 42 negara dan wilayah di Laut Karibia, Amerika Tengah, dan bagian utara Amerika Selatan. Wilayah
+            ini merupakan rumah bagi 305 juta orangdan 3,7 juta umat Advent. Hal ini berarti satu orang Advent
+            berbanding 82 orang.
           </p>
           <p><em>
-              inVerse diterbitkan oleh Departemen Sekolah Sabat dan Pelayanan Perorangan General Conference Gereja
-              Masehi Advent Hari Ketujuh untuk pelajar, dewasa muda, pekerja profesional, dan orang tua muda dan mereka
-              berjiwa muda.</em>
+              Perlu diketahui bahwa Anda tidak perlu membaca cerita persis seperti yang dipublikasikan. silakan
+              menyesuaikan bahasa dan isinya dengan tingkat yang sesuai dengan kelompok usia di kelas Sekolah Sabat
+              Anda.</em>
           </p>
+          <button> <a class="file1" href="" target="_blank">Download Pdf</a></button>
           <div class="lessonlist">
 
             <!-- BHS INDOENSIA -->
@@ -170,127 +221,135 @@
                   <li>
                     <h3 class="ltrigger open">Bahasa Indonesia</h3>
                     <ul class="drawer lessons open">
-                      <li>
-                        <a class="html" href="" target="_blank"><span>Pendahuluan</span><br>
+                      <!-- <li>
+                        <a class="html" href="" target="_blank"><span>Download</span><br>
                         </a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
-                      </li>
+                      </li> -->
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2431"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2431"><span>Sabat
                             ke 01</span>
                           <p class="judul-cerita"><em><?= $titlestory1 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1ooOMyEIl-e2AlJoLXTmen4GpFbnUFdka/edit?usp=sharing&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2432"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2432"><span>Sabat
                             ke 02</span>
                           <p class="judul-cerita"><em><?= $titlestory2 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1SHrpgffDStUz9xJkx_4QCj9tll9z_qGC/edit?usp=sharing&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2433"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2433"><span>Sabat
                             ke 03</span>
                           <p class="judul-cerita"><em><?= $titlestory3 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/17xg3EyldJwdGiPRvLUTCNN5Ro5Z9_Ppm/edit?usp=sharing&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2434"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2434"><span>Sabat
                             ke 04</span>
                           <p class="judul-cerita"><em><?= $titlestory4 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1F1yEEIgw4lw4uTkrZGWmbMWiNT9fYjMN/edit?usp=sharing&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2435"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2435"><span>Sabat
                             ke 05</span>
                           <p class="judul-cerita"><em><?= $titlestory5 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2436"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2436"><span>Sabat
                             ke 06</span>
                           <p class="judul-cerita"><em><?= $titlestory6 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2437"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2437"><span>Sabat
                             ke 07</span>
                           <p class="judul-cerita"><em><?= $titlestory7 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2438"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2438"><span>Sabat
                             ke 08</span>
                           <p class="judul-cerita"><em><?= $titlestory8 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d2439"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d2439"><span>Sabat
                             ke 09</span>
                           <p class="judul-cerita"><em><?= $titlestory9 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24310"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d24310"><span>Sabat
                             ke 10</span>
                           <p class="judul-cerita"><em><?= $titlestory10 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24311"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d24311"><span>Sabat
                             ke 11</span>
                           <p class="judul-cerita"><em><?= $titlestory11 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24312"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d24312"><span>Sabat
                             ke 12</span>
                           <p class="judul-cerita"><em><?= $titlestory12 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="<?= base_url('') ?>berita-misi/dewasa/d24313"><span>Sabat
+                        <a class="html1" href="<?= base_url('') ?>berita-misi/dewasa/d24313"><span>Sabat
                             ke 13</span>
                           <p class="judul-cerita"><em><?= $titlestory13 ?></em></p>
                         </a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
@@ -303,119 +362,93 @@
                     <h3 class="ltrigger">English Mission Story</h3>
                     <ul class="drawer lessons">
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L01.pdf"
-                          target="_blank"><span>Lesson 01 - July 6</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L01.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2431" target="_blank"><span>Story 01 -
+                            July 6</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L02.pdf"
-                          target="_blank"><span>Lesson 02 - July 13</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L02.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2432" target="_blank"><span>Story 02 -
+                            July 13</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L03.pdf"
-                          target="_blank"><span>Lesson 03 - July 20</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L03.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2433" target="_blank"><span>Story 03 -
+                            July 20</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L04.pdf"
-                          target="_blank"><span>Lesson 04 - July 27</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L04.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2434" target="_blank"><span>Story 04 -
+                            July 27</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L05.pdf"
-                          target="_blank"><span>Lesson 05 - August 3</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L05.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2435" target="_blank"><span>Story 05 -
+                            August 3</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L06.pdf"
-                          target="_blank"><span>Lesson 06 - August 10</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L06.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2436" target="_blank"><span>Story 06 -
+                            August 10</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L07.pdf"
-                          target="_blank"><span>Lesson 07 - August 17</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L07.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2437" target="_blank"><span>Story 07 -
+                            August 17</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L08.pdf"
-                          target="_blank"><span>Lesson 08 - August 24</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L08.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2438" target="_blank"><span>Story 08 -
+                            August 24</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L09.pdf"
-                          target="_blank"><span>Lesson 09 - August 31</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L09.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a2439" target="_blank"><span>Story 09 -
+                            August 31</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L10.pdf"
-                          target="_blank"><span>Lesson 10 - September 7</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L10.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a24310" target="_blank"><span>Story 10 -
+                            September 7</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L11.pdf"
-                          target="_blank"><span>Lesson 11 - September 14</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L11.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a24311" target="_blank"><span>Story 11 -
+                            September 14</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L12.pdf"
-                          target="_blank"><span>Lesson 12 - September 21</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L12.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a24312" target="_blank"><span>Story 12 -
+                            September 21</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
                       <li>
-                        <a class="html"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L13.pdf"
-                          target="_blank"><span>Lesson 13 - September 28</span></a><a class="file" target="_blank"
-                          class="file"
-                          href="https://www.inversebible.org/assets/inverse/lessons/Par/INV-D-2024-Q3-L13.pdf"><span>Download</span></a>
+                        <a class="html" href="https://am.adventistmission.org/a24313" target="_blank"><span>Story 13 -
+                            September 28</span></a><a class="file" target="_blank" class="file"
+                          href="https://am.adventistmission.org/mqa24q3.pdf"><span>Download</span></a>
                         <section class="audio">
                         </section>
                       </li>
@@ -435,15 +468,15 @@
             <ul class="folders folders-gracelink">
               <li class="folder">
                 <h3 class="font--secondary--m sized theme--secondary-text-color">
-                  <a href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa">
-                    Sekolah Sabat Dewasa
+                  <a href="<?= base_url('') ?>berita-misi/anak-anak">
+                    Berita Misi Anak-anak
                   </a>
                 </h3>
               </li>
               <li class="folder">
                 <h3 class="font--secondary--m sized theme--secondary-text-color">
-                  <a href="<?= base_url('') ?>pages/ruang-lingkup-pelajaran-ss">
-                    Ruang Lingkup dan Urutan Pelajaran
+                  <a href="<?= base_url('') ?>berita-misi/video">
+                    Video Berita Misi
                   </a>
                 </h3>
               </li>
