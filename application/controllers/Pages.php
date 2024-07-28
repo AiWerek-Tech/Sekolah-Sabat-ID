@@ -1,18 +1,34 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pages extends CI_Controller
+class Pages extends MY_Controller
 {
 
     public function aboutus()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -29,7 +45,8 @@ class Pages extends CI_Controller
             'og_title' => 'Tentang Kami',
             'og_description' => 'Situs Penyedia Materi Pelajaran Sekolah Sabat',
             'og_image' => base_url('assets/image/home_image.webp'),
-            'og_url' => base_url('pages/tentang-kami')
+            'og_url' => base_url('pages/tentang-kami'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -40,12 +57,28 @@ class Pages extends CI_Controller
     public function aboutss()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -62,7 +95,8 @@ class Pages extends CI_Controller
             'og_title' => 'Tentang Sekolah Sabat',
             'og_description' => 'Sekolah Sabat adalah salah satu bagian terpenting dari hari Sabat. Ini memberi kita kesempatan untuk bersekutu, memahami misi, melakukan pelayanan masyarakat, dan yang paling utama, belajar dan berdiskusi tentang Alkitab...',
             'og_image' => base_url('assets/image/home_image.webp'),
-            'og_url' => base_url('pages/pages/tentang-sekolah-sabat')
+            'og_url' => base_url('pages/pages/tentang-sekolah-sabat'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -73,12 +107,28 @@ class Pages extends CI_Controller
     public function ruanglingkupss()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -95,7 +145,8 @@ class Pages extends CI_Controller
             'og_title' => 'Ruang Lingkup dan Urutan Pelajaran',
             'og_description' => 'Ruang Lingkup dan Urutan Pelajaran Sekolah Sabat',
             'og_image' => base_url('assets/image/adventist-map.webp'),
-            'og_url' => base_url('pages/ruang-lingkup-pelajaran-ss')
+            'og_url' => base_url('pages/ruang-lingkup-pelajaran-ss'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -106,12 +157,28 @@ class Pages extends CI_Controller
     public function aboutgracelink()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -128,7 +195,8 @@ class Pages extends CI_Controller
             'og_title' => 'Kurikulum Gracelink',
             'og_description' => 'GraceLink adalah kurikulum 12 tahun yang terdiri dari 624 pelajaran, semuanya berlandaskan pada Kitab Suci...',
             'og_image' => base_url('assets/image/children-ministry-2.webp'),
-            'og_url' => base_url('pages/tentang-kurikulum-gracelink')
+            'og_url' => base_url('pages/tentang-kurikulum-gracelink'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -141,12 +209,28 @@ class Pages extends CI_Controller
     public function beritamisi()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -163,7 +247,8 @@ class Pages extends CI_Controller
             'og_title' => 'Berita Misi Advent',
             'og_description' => 'Kisah Misi Advent Sedunia',
             'og_image' => base_url('assets/image/adventist-map.webp'),
-            'og_url' => base_url('pages/berita-misi')
+            'og_url' => base_url('pages/berita-misi'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -173,12 +258,28 @@ class Pages extends CI_Controller
 
     public function beritamisidewasa()
     {
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -235,7 +336,8 @@ class Pages extends CI_Controller
             'og_title' => 'Berita Misi Dewasa',
             'og_description' => 'Kisah Misi Advent Sedunia untuk Dewasa',
             'og_image' => base_url('assets/image/berita_misi/bmd.webp'),
-            'og_url' => base_url('pages/berita-misi')
+            'og_url' => base_url('pages/berita-misi'),
+            'visitor_data' => $visitor_data
         ];
 
         // Simpan data ke dalam sesi
@@ -247,12 +349,28 @@ class Pages extends CI_Controller
 
     public function beritamisianak()
     {
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -310,7 +428,8 @@ class Pages extends CI_Controller
             'og_title' => 'Berita Misi Anak-anak',
             'og_description' => 'Kisah Misi Advent Sedunia untuk Anak-anak',
             'og_image' => base_url('assets/image/berita_misi/bma.webp'),
-            'og_url' => base_url('pages/berita-misi')
+            'og_url' => base_url('pages/berita-misi'),
+            'visitor_data' => $visitor_data
         ];
         // Simpan data ke dalam sesi
         $this->session->set_userdata('data_beritamisi_anak', $data);
@@ -322,12 +441,28 @@ class Pages extends CI_Controller
     public function videoberitamisi()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -344,7 +479,8 @@ class Pages extends CI_Controller
             'og_title' => 'Video Berita Misi Advent',
             'og_description' => 'Video Kisah Misi Advent Sedunia',
             'og_image' => base_url('assets/image/berita_misi/video-bm.webp'),
-            'og_url' => base_url('berita-misi/video')
+            'og_url' => base_url('berita-misi/video'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -355,12 +491,28 @@ class Pages extends CI_Controller
     public function resources()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
+
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
@@ -377,7 +529,8 @@ class Pages extends CI_Controller
             'og_title' => 'Sumber Daya',
             'og_description' => 'Sumber Daya Lainnya dari Sekolah Sabat ID',
             'og_image' => base_url('assets/image/resource.webp'),
-            'og_url' => base_url('pages/resources')
+            'og_url' => base_url('pages/resources'),
+            'visitor_data' => $visitor_data
         ];
 
 
@@ -388,13 +541,28 @@ class Pages extends CI_Controller
     public function resourcelinks()
     {
 
-        // Aktifkan pesan kesalahan PHP
-        error_reporting(E_ALL);
-        ini_set('display_errors', 4);
+        $this->config->load('site_config');
+        // Load helper url
+        $this->load->helper('url');
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config'); // Pastikan 'site_config' sesuai dengan nama file tanpa ekstensi
+        // Inisialisasi session
+        $session_id = $this->session->userdata('session_id');
+        if (!$session_id) {
+            $session_id = uniqid();
+            $this->session->set_userdata(['session_id' => $session_id]);
+        }
 
+        // Hitung jumlah kunjungan
+        $current_url = current_url();
+        $this->PageCounter_model->count_page($current_url, $session_id);
+
+        // Ambil data pengunjung
+        $visitor_data = (object) [
+            'total_visitors' => $this->PageCounter_model->get_total_visitors(),
+            'today_visitors' => $this->PageCounter_model->get_today_visitors(),
+            'yesterday_visitors' => $this->PageCounter_model->get_yesterday_visitors(),
+            'online_visitors' => $this->PageCounter_model->get_online_visitors(),
+        ];
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
             'judul' => 'Resources Link',
@@ -410,7 +578,8 @@ class Pages extends CI_Controller
             'og_title' => 'Resources Link',
             'og_description' => 'Tautan Sumber Daya merupakan kumpulan tautan atau situs sumber daya eksternal yang relevan dengan Pelajaran Sekolah Sabat Resmi milik Gereja Masehi Advent Hari Ketujuh yang menjadi sumber adopsi semua konten dalam website ini.',
             'og_image' => base_url('assets/image/resource.webp'),
-            'og_url' => base_url('pages/resource-links')
+            'og_url' => base_url('pages/resource-links'),
+            'visitor_data' => $visitor_data
         ];
 
 

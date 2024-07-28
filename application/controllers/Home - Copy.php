@@ -5,9 +5,13 @@ class Home extends MY_Controller
 {
     public function index()
     {
-        // Model sudah otomatis dimuat, jadi tidak perlu memuat ulang
-        // echo 'Model Loaded'; // Hapus jika tidak diperlukan
+        // Model sudah otomatis dimuat, jadi baris ini tidak perlu
+        // $this->load->model('PageCounter_model');   
+        // echo 'Model Loaded';
+
+        // Load konfigurasi sebelum memuat view
         $this->config->load('site_config');
+
         // Load helper url
         $this->load->helper('url');
 
@@ -45,7 +49,7 @@ class Home extends MY_Controller
             'og_description' => 'Situs Penyedia Materi Pelajaran Sekolah Sabat',
             'og_image' => base_url('assets/image/home_image.webp'),
             'og_url' => base_url(''),
-            'visitor_data' => $visitor_data
+            'visitor_data' => $visitor_data // Menambahkan data pengunjung ke view
         ];
 
         // Load view

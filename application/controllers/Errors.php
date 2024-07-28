@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Errors extends CI_Controller
+class Errors extends MY_Controller
 {
 
     public function error_404()
@@ -18,7 +18,7 @@ class Errors extends CI_Controller
             'header' => 'template/v_header', // Lokasi view header
             'navbar' => 'template/v_navbar', // Lokasi view navbar
             'page' => 'v_error_404', // Lokasi view content halaman ssa
-            'aside' => 'template/v_aside',
+            // 'aside' => 'template/v_aside',
             'footer' => 'template/v_footer', // Lokasi view footer
         ];
 
