@@ -41,7 +41,7 @@ class Home extends MY_Controller
             'page' => 'v_home',
             'aside' => 'template/v_aside',
             'footer' => 'template/v_footer',
-            'og_title' => 'Home | Sekolah Sabat ID',
+            'og_title' => 'Home',
             'og_description' => 'Situs Penyedia Materi Pelajaran Sekolah Sabat',
             'og_image' => base_url('assets/image/home_image.webp'),
             'og_url' => base_url(''),

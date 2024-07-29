@@ -17,8 +17,7 @@
     <base href="">
 
     <!-- Meta Tags for SEO and Open Graph -->
-    <meta property="og:title"
-        content="<?= isset($og_title) ? $og_title : $judul ?> | <?= $this->config->item('app_name') ?>">
+    <meta property="og:title" content="<?= $judul ?>  | <?= $this->config->item('app_name') ?>">
     <meta property="og:description"
         content="<?= isset($og_description) ? $og_description : $this->config->item('app_description') ?>">
     <meta property="og:image" content="<?= isset($og_image) ? $og_image : base_url('assets/image/home_image.webp') ?>">
@@ -27,7 +26,7 @@
 
     <!-- Meta Tags for Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= isset($og_title) ? $og_title : $judul ?>">
+    <meta name="twitter:title" content="<?= $judul ?> | <?= $this->config->item('app_name') ?>">
     <meta name="twitter:description"
         content="<?= isset($og_description) ? $og_description : $this->config->item('app_description') ?>">
     <meta name="twitter:image" content="<?= isset($og_image) ? $og_image : base_url('assets/image/home_image.webp') ?>">
